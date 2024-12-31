@@ -247,6 +247,8 @@ public class AudioManager: Loggable {
         }
         #if os(iOS) || os(visionOS) || os(tvOS)
         try await _asyncConfigure(newState: newState, oldState: oldState)
+        // STOP A2DP play
+        RTC.audioDeviceModule.stopPlayout()
         #endif
     }
 
