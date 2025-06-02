@@ -348,3 +348,14 @@ public extension AudioManager {
         renderPreProcessingDelegateAdapter.remove(delegate: delegate)
     }
 }
+
+public extension AudioManager {
+    var audioSourceBlock: AVAudioSourceNodeRenderBlock? {
+        RTC.audioDeviceModule.getAudioSourceBlock()
+    }
+
+    var audioSinkBlock: AVAudioSinkNodeReceiverBlock? {
+        RTC.audioDeviceModule.getAudioSinkBlock()
+    }
+
+}
