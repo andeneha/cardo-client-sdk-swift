@@ -39,11 +39,11 @@ public final class AudioCaptureOptions: NSObject, CaptureOptions, Sendable {
     @objc
     public let highpassFilter: Bool
 
-    public init(echoCancellation: Bool = true,
-                noiseSuppression: Bool = true,
-                autoGainControl: Bool = true,
-                typingNoiseDetection: Bool = true,
-                highpassFilter: Bool = true)
+    public init(echoCancellation: Bool = false,
+                noiseSuppression: Bool = false,
+                autoGainControl: Bool = false,
+                typingNoiseDetection: Bool = false,
+                highpassFilter: Bool = false)
     {
         self.echoCancellation = echoCancellation
         self.noiseSuppression = noiseSuppression
