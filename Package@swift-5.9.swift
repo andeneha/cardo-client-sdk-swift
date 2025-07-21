@@ -31,7 +31,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LiveKitWebRTC",
-            path: "./Frameworks/Custom/Release/LiveKitWebRTC.xcframework" // relative path to the .xcframework
+            path: "./Frameworks/LiveKitWebRTC.xcframework" // relative path to the .xcframework
         ),
         .target(
             name: "LiveKit",
