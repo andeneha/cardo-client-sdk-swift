@@ -358,4 +358,7 @@ public extension AudioManager {
         RTC.audioDeviceModule.getAudioSinkBlock()
     }
 
+    func setPlayoutDataBlock(_ block: ((UnsafePointer<Int16>, AVAudioFrameCount) -> Void)?) {
+        RTC.audioDeviceModule.setPlayoutDataBlock(block)
+    }
 }

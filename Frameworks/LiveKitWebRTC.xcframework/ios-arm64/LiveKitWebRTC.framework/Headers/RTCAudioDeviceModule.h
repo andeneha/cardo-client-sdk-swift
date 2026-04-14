@@ -48,6 +48,9 @@ RTC_OBJC_EXPORT
 - (AVAudioSourceNodeRenderBlock _Nullable)getAudioSourceBlock;
 - (AVAudioSinkNodeReceiverBlock _Nullable)getAudioSinkBlock;
 
+typedef void (^RTCPlayoutDataBlock)(const int16_t* _Nonnull data, AVAudioFrameCount frameCount);
+- (void)setPlayoutDataBlock:(RTCPlayoutDataBlock _Nullable)block;
+
 - (BOOL)startPlayout;
 - (BOOL)stopPlayout;
 - (BOOL)initPlayout;
