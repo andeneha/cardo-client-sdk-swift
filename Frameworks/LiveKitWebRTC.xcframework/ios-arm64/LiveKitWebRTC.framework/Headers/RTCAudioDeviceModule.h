@@ -45,7 +45,6 @@ RTC_OBJC_EXPORT
 
 - (BOOL)setDevicesUpdatedHandler: (nullable RTCOnAudioDevicesDidUpdate) handler;
 
-- (AVAudioSourceNodeRenderBlock _Nullable)getAudioSourceBlock;
 - (AVAudioSinkNodeReceiverBlock _Nullable)getAudioSinkBlock;
 
 typedef void (^RTCPlayoutDataBlock)(const int16_t* _Nonnull data, AVAudioFrameCount frameCount);

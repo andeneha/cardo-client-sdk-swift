@@ -350,10 +350,6 @@ public extension AudioManager {
 }
 
 public extension AudioManager {
-    var audioSourceBlock: AVAudioSourceNodeRenderBlock? {
-        RTC.audioDeviceModule.getAudioSourceBlock()
-    }
-
     var audioSinkBlock: AVAudioSinkNodeReceiverBlock? {
         RTC.audioDeviceModule.getAudioSinkBlock()
     }
